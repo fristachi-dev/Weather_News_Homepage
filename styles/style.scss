@@ -113,7 +113,7 @@ h5 {
 nav {
     margin-bottom: 15px;
 
-    .upper {
+    .nav-upper {
         height: 80px;
         position: relative;
         background: #1A357C;
@@ -124,29 +124,34 @@ nav {
             height: 100%;
             text-align: center;
             margin: 0 auto;
+            display: flex;
 
-            div {//border: 1px solid red;
+            div {
+                //border: 1px solid red;
             }
 
             .left-nav {
                 height: 100%;
-                width: 200px;
-                display: inline-block;
-                float: left;
+                flex: 1;
                 padding: 10px;
 
                 .logo {
                     height: 100%;
                 }
+                .logo-small {
+                    width: 100%;
+                    padding: 10px;
+                    display: none;
+                }
+                
             }
 
             .center {
-                width: fit-content;
-                display: inline-block;
+                flex: 2;
                 
                 img {
                     position: relative;
-                    margin-left: -37px;
+                    margin-left: -45px;
                     top: 5px;
                     height: 23px;
                     border: 0;
@@ -170,6 +175,8 @@ nav {
                     //padding-right: 36px;
                     //text-indent: 20px;
                     font-weight: 300;
+                    position: relative;
+                    left: -8px;
     
                     &::placeholder {
                         color: white;
@@ -184,9 +191,7 @@ nav {
 
             .right-nav {
                 height: 100%;
-                width: 200px;
-                display: inline-block;
-                float: right;
+                flex: 1;
 
                 .unit-wrapper {
                     position: relative;
@@ -230,7 +235,7 @@ nav {
         }
     }
 
-    .lower {
+    .nav-lower {
         background: #050a2b;
         height: 50px;
 
@@ -395,20 +400,26 @@ section {
     
                 ul {
                     display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
     
                     li {
-                        flex: 1;
+                        flex: 0 1 160px;
                         text-align: center;
                         margin: 20px 8px 10px;
+                
     
                         img {
-                            width: 160px; height: 110px;
+                            width: 100%; height: 110px;
                             border-radius: 5px;
+    
                         }
     
                         p {
                             font-size: 13px;
                             font-weight: 500;
+                            width: 100%;
+                            margin: 0 auto;
                         }
                     }
                 }
@@ -554,14 +565,16 @@ section {
                 ul {
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: center;
     
                     li {
-                        flex: 1;
+                        flex: 0 1 160px;
                         text-align: center;
                         margin: 20px 8px 10px;
+                
     
                         img {
-                            width: 160px; height: 110px;
+                            width: 100%; height: 110px;
                             border-radius: 5px;
     
                         }
@@ -569,7 +582,7 @@ section {
                         p {
                             font-size: 13px;
                             font-weight: 500;
-                            width: 162px;
+                            width: 100%;
                             margin: 0 auto;
                         }
                     }
@@ -586,7 +599,6 @@ section {
                 .pad-wrap {
                     padding: 20px;
                 }
-
     
                 .upper {
                     overflow: hidden;
@@ -607,6 +619,7 @@ section {
                         left: 30px; top: 10px;
                         position: relative;
                         width: 250px;
+                        height: 100px;
 
 
                         div {
@@ -717,11 +730,12 @@ section {
 
                 .day {
                     margin-left: 10px;
-                    width: 70px;
+                    width: 10%;
+                    min-width: 50px;
                 }
 
                 .temp {
-                    width: 80px;
+                    width: 15%;
                     float: left;
                     position: relative;
                     height: 100%;
@@ -985,6 +999,15 @@ section {
             
         }
     }
+    .wrapper-7day {
+        .list-7day {
+            
+            .right-temp {
+                margin-right: 10px !important;
+            }
+            
+        }
+    }
 
 
 
@@ -995,10 +1018,20 @@ section {
     body {background: green;}
 
     nav {
+        div {
+            //border: 1px solid red;
+        }
+
+        .wrapper {
+            margin: 0 !important;
+            width: 100% !important;
+        }
 
         input {
             width: 250px !important;
         }
+
+
     }
 
     .wrapper-hourly {
@@ -1017,16 +1050,43 @@ section {
         }
     }
 
+    .wrapper-7day {
+        .list-7day {
+            
+            .right-temp {
+                margin-right: 10px !important;
+            }
+            .wind {
+                display: none;
+            }
+            .wind-img {
+                display: none;
+            }
+            
+        }
+    }
+
 
 }
 
-@media only screen and (max-width: 750px) {
-    body {background: yellow;}
+@media only screen and (max-width: 600px) {
+    body {    background: linear-gradient(#867ebb, #BF91C3, #ddc8db);}
+
+    //General
+    .width {
+        width: 100%;
+    }
 
     nav {
+        .nav-list li {
+            width: 70px !important;
+        }
+
+        div {
+        }
 
         .left-nav {
-            width: 30% !important;
+            flex: 1 !important;
         }
 
         input {
@@ -1034,7 +1094,30 @@ section {
         }
 
         .right-nav {
-            width: fit-content !important;
+            flex:  !important;
+        }
+        //div {border: 1px solid red;}
+
+        .center {
+            flex: 3 !important;
+        }
+
+        .nav-list {
+            width: 100%;
+            padding: 0 !important;
+             
+        }
+        .logo, .globe {
+            display: none;
+        }
+
+        .left-nav {
+            .logo-small {
+                display: block !important;
+            }
+        }
+        .more {
+            display: none;
         }
     }
 
@@ -1048,7 +1131,132 @@ section {
         width: 100% !important;
         float: none !important;
         margin: 0 auto !important;
- 
+    }
+
+    //Tabs
+    .wrapper-today {
+        & > div {
+            padding: 15px !important;
+        }
+
+        .current-temp {
+            font-size: 60px !important;
+        }
+
+        .current-img {
+            width: 80px !important; height: 80px !important;
+            top: 20px;
+        }
+
+        .current p {
+            font-size: 16px !important;
+        }
+    
+        .today ul {
+            img {
+                width: 50px !important; height: 50px !important;
+            }
+            .pop-img {
+                width: 25px !important; height: 25px !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+            h2 {
+                font-size: 30px !important;
+                margin: 6px 0;
+            }
+            h4 {
+                font-size: 16px !important;
+            }
+        }
+    
+        .today-info {
+    
+            .upper {
+                .sun {
+                    float: none !important;
+                }
+            }
+            .lower {
+                flex-direction: column;
+    
+                ul {
+                    margin-right: 0 !important;
+                }
+            }
+
+            .pad-wrap {
+                padding: 10px !important;
+            }
+            
+        }
+
+        .today-news {
+
+            ul li {
+                flex: 0 1 150px !important;
+                margin: 10px 3px !important;
+            }
+        }
+    }
+
+    .wrapper-hourly {
+        .list-hourly {
+            
+            .right-temp {
+                margin-right: 10px !important;
+            }
+            .perc {
+                display: none;
+            }
+            .perc-img {
+                display: none;
+            }
+            
+        }
+    }
+
+    .wrapper-7day {
+        .list-7day {
+            
+            .right-temp {
+                margin-right: 10px !important;
+            }
+            .perc {
+                display: none;
+            }
+            .perc-img {
+                display: none;
+            }
+
+            .temp {
+                margin-top: -12px;
+                position: relative;
+                margin-left: 6px;
+                width: 30px !important;
+                span {
+                    float: none !important;
+                }
+                
+                .spacer {
+                    display: none;
+                }
+                
+            }
+            
+        }
+    }
+
+    .wrapper-news {
+
+        .news-list {
+
+            li {
+                flex: 0 1 150px !important;
+                margin: 10px 3px !important;
+            }
+        }
     }
 
 }

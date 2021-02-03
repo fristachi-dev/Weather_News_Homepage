@@ -2,94 +2,12 @@
 $(document).ready(function () {
 
 
-    function News() {
-        fetch('http://api.mediastack.com/v1/news?access_key=d99bf880724e38f4ec8d262cdda7e171&countries=us&date=&date=2021-1-20,2021-1-28')
-            .then(function (data) {
-                return data.json();
-            })
-            .then(function (data) {
-                // console.log(data)
-
-                let image = 0;
-                let txt = 0;
-                let i = 0;
-                while (txt < 7) {
-
-                    if (data.data[i].image == null) {
-                        $('.news-main-left ul').append(
-                            `
-                        <li>
-                            <a href="${data.data[i].url}">
-                                <h5>${data.data[i].title}</h5>
-                            </a>
-                        </li>
-                        `
-                        );
-                        txt++;
-                    }
-
-                    if (i == 24) {
-                        break;
-                    }
-                    i++;
-                }
-
-                i = 0;
-                while (image < 4) {
-
-                    if (data.data[i].image !== null) {
-                        $('.news-' + image + ' h3').html(data.data[i].title);
-                        $('.news-' + image + ' p').html(data.data[i].description.substring(0, 150) + '...');
-                        $('.news-' + image + ' img').attr('src', data.data[i].image);
-                        $('.news-' + image + ' a').attr('href', data.data[i].url);
-                        image++;
-                    }
-
-                    if (i == 24) {
-                        break;
-                    }
-                    i++;
-                }
-
-            });
-
-        fetch('https://www.reddit.com/r/USNEWS.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (response) {
-
-                let listItems = $(".news-list li");
-                let e = response.data.children;
-                let a = 0;
-
-                for (let i = 2; a < 4; i++) {
-
-                    if (e[i].data.thumbnail !== 'self') {
-                        $('.news-list').append(
-                            `
-                            <li>
-                                <a href="${e[i].data.url}">
-                                <img src="${e[i].data.thumbnail}">
-                                <p>${e[i].data.title.substring(0, 45) + '...'}</p>
-                                </a>
-                                
-                            </li>
-                            `
-                        );
-                        a++;
-                    }
-
-                }
-
-
-            });
-    }
-
-
+    //Initialize
     $('.content').hide();
     $('.wrapper-today').show();
+    $('.unit-F').toggleClass('active-unit');
 
+    //Nav change tabs
     $('.today-nav').on('click', function () {
         $('.nav-list li').removeClass('active');
         $(this).addClass('active');
@@ -119,20 +37,275 @@ $(document).ready(function () {
     });
 
 
-    $('.unit-F').toggleClass('active-unit');
+    //Nav unit conversion buttons
     $('.unit-F').on('click', function () {
         $(this).addClass('active-unit');
         $('.unit-C').removeClass('active-unit');
+        PageCtoF()
     });
+
     $('.unit-C').on('click', function () {
         $(this).addClass('active-unit');
         $('.unit-F').removeClass('active-unit');
+        PageFtoC()
+    });
+
+    //Seach new location
+    $('.search-btn').on('click', function () {
+        let val = $('.geo-input').val();
+        Weather(val)
     });
 
 
 
+    //Unito Conversion
+    function PageFtoC() {
+        $('.current-temp').html(FtoC($('.current-temp').html()) + '°');
+        $('.current-high').html(FtoC($('.current-high').html()) + '°');
+        $('.current-low').html(FtoC($('.current-low').html()) + '°');
+
+        $('.today-morning h2').html(FtoC($('.today-morning h2').html()) + '°');
+        $('.today-day h2').html(FtoC($('.today-day h2').html()) + '°');
+        $('.today-evening h2').html(FtoC($('.today-evening h2').html()) + '°');
+        $('.today-night h2').html(FtoC($('.today-night h2').html()) + '°');
+
+        $('.today-feels').html(FtoC($('.today-feels').html()) + '°');
+        $('.today-high').html(FtoC($('.today-high').html()) + '° /');
+        $('.today-low').html(FtoC($('.today-low').html()) + '°');
 
 
+
+        $('.temp-high').each(function () {
+            $(this).html(FtoC($(this).html()) + '°');
+        });
+        $('.temp-low').each(function () {
+            $(this).html(FtoC($(this).html()) + '°');
+        });
+        $('.temp-avg').each(function () {
+            $(this).html(FtoC($(this).html()) + '°');
+        });
+    }
+
+    function PageCtoF() {
+        $('.current-temp').html(CtoF($('.current-temp').html()) + '°');
+        $('.current-high').html(CtoF($('.current-high').html()) + '°');
+        $('.current-low').html(CtoF($('.current-low').html()) + '°');
+
+        $('.today-morning h2').html(CtoF($('.today-morning h2').html()) + '°');
+        $('.today-day h2').html(CtoF($('.today-day h2').html()) + '°');
+        $('.today-evening h2').html(CtoF($('.today-evening h2').html()) + '°');
+        $('.today-night h2').html(CtoF($('.today-night h2').html()) + '°');
+
+        $('.today-feels').html(CtoF($('.today-feels').html()) + '°');
+        $('.today-high').html(CtoF($('.today-high').html()) + '° /');
+        $('.today-low').html(CtoF($('.today-low').html()) + '°');
+
+
+
+        $('.temp-high').each(function () {
+            $(this).html(CtoF($(this).html()) + '°');
+        });
+        $('.temp-low').each(function () {
+            $(this).html(CtoF($(this).html()) + '°');
+        });
+        $('.temp-avg').each(function () {
+            $(this).html(CtoF($(this).html()) + '°');
+        });
+    }
+
+    function FtoC(f) {
+        return Math.round((parseInt(f) - 32) * (5 / 9));
+    }
+
+    function CtoF(c) {
+        return Math.round((parseInt(c) * (9 / 5)) + 32);
+    }
+
+    function UnixtoDay(u, timeZone) {
+        let unix = u * 1000;
+
+        let day = new Date(unix).toLocaleDateString("en-US", { timeZone: timeZone })
+        // //console.log(day)
+
+        return day;
+    }
+
+    function UnixtoTime(u, timeZone) {
+        let unix = u * 1000;
+
+        let time = new Date(unix).toLocaleTimeString("en-US", { timeZone: timeZone })
+        // //console.log(time)
+
+        return time;
+    }
+
+
+    //Time Format Functions
+    function GetHour(t) {
+        let hIndex = t.search(':');
+        let h = t.slice(0, hIndex) + ' ' + t.slice(-2);
+        return h;
+    }
+
+    const revStr = (string) => string.split("").reverse().join('');
+    function GetHourMin(t) {
+        let c = t.slice(-2);
+        let rev = revStr(t)
+        let index = rev.search(':');
+        let a = rev.slice(index + 1, rev.length);
+        rev = revStr(a) + ' ' + c;
+
+        return rev;
+    }
+
+    function TimeofDay(t) {
+        $('.bar h2').css('font-weight', 400);
+        $('.bar p').css('font-weight', 400);
+        let m = t.slice(-2);
+        let hIndex = t.search(':');
+        let h = t.slice(0, hIndex);
+        h = parseInt(h);
+
+        if (m == 'AM') {
+
+            if (h >= 5 && h <= 11) {
+                $('.today-morning h2').css('font-weight', 700);
+                $('.today-morning p').css('font-weight', 700);
+                $('.today-morning h2').css('color', '#4040da');
+            } else if (h == 12 || h >= 1 && h <= 4) {
+                $('.today-night h2').css('font-weight', 700);
+                $('.today-night p').css('font-weight', 700);
+                $('.today-night h2').css('color', '#4040da');
+            }
+
+        } else if (m == 'PM') {
+
+            if (h == 12 || h >= 1 && h <= 5) {
+                $('.today-day h2').css('font-weight', 700);
+                $('.today-day p').css('font-weight', 700);
+                $('.today-day h2').css('color', '#4040da');
+            } else if (h >= 6 && h <= 9) {
+                $('.today-evening h2').css('font-weight', 700);
+                $('.today-evening p').css('font-weight', 700);
+                $('.today-evening h2').css('color', '#4040da');
+            } else if (h == 10 || h == 11) {
+                $('.today-night h2').css('font-weight', 700);
+                $('.today-night p').css('font-weight', 700);
+                $('.today-night h2').css('color', '#4040da');
+            }
+
+        }
+    }
+
+    function GetDay(date) {
+        const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        let a = new Date(date);
+        let b = a.getDate()
+        a = a.getDay()
+        b = '' + b;
+        // //console.log(week[a] + ' ' + b)
+        return week[a] + ' ' + b;
+    }
+
+    function GetDate() {
+        let curDate = new Date()
+        temp = curDate.toISOString()
+        let i = temp.search('T')
+        temp = temp.slice(0, i)
+        return temp;
+    }
+
+
+    //Get News
+    function News() {
+        fetch('http://api.mediastack.com/v1/news?access_key=d99bf880724e38f4ec8d262cdda7e171&countries=us&date=2021-1-17,' + GetDate())
+            .then(function (data) {
+                return data.json();
+            })
+            .then(function (data) {
+                // console.log(data)
+
+
+                let image = 0;
+                let txt = 0;
+                let i = 0;
+                //Filter and populate news stories without images
+                while (txt < 7) {
+
+                    if (data.data[i].image == null) {
+                        $('.news-main-left ul').append(
+                            `
+                        <li>
+                            <a href="${data.data[i].url}">
+                                <h5>${data.data[i].title}</h5>
+                            </a>
+                        </li>
+                        `
+                        );
+                        txt++;
+                    }
+
+                    if (i == 24) {
+                        break;
+                    }
+                    i++;
+                }
+
+                //Filter and populate news stories with images
+                i = 0;
+                while (image < 4) {
+
+                    if (data.data[i].image !== null) {
+                        $('.news-' + image + ' h3').html(data.data[i].title);
+                        $('.news-' + image + ' p').html(data.data[i].description.substring(0, 150) + '...');
+                        $('.news-' + image + ' img').attr('src', data.data[i].image);
+                        $('.news-' + image + ' a').attr('href', data.data[i].url);
+                        image++;
+                    }
+
+                    if (i == 24) {
+                        break;
+                    }
+                    i++;
+                }
+
+            });
+
+        fetch('https://www.reddit.com/r/USNEWS.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (response) {
+
+                let listItems = $(".news-list li");
+                let e = response.data.children;
+                let a = 0;
+
+                //Populate top stories
+                for (let i = 2; a < 4; i++) {
+
+                    if (e[i].data.thumbnail !== 'self') {
+                        $('.news-list').append(
+                            `
+                            <li>
+                                <a href="${e[i].data.url}">
+                                <img src="${e[i].data.thumbnail}">
+                                <p>${e[i].data.title.substring(0, 45) + '...'}</p>
+                                </a>
+                                
+                            </li>
+                            `
+                        );
+                        a++;
+                    }
+
+                }
+
+
+            });
+    }
+
+    //Get Weather
     function Weather(val) {
 
         let i = 0;
@@ -148,11 +321,13 @@ $(document).ready(function () {
                 let lat = data.data[0].latitude;
                 let geo = data.data[0].label.substring(0, data.data[0].label.length - 5);
 
+                //Display location
                 $('.current-location').html(geo + ' Weather');
                 $('.list-location').html(' - ' + geo);
                 $('.today h3').html('Today\'s Forecast for ' + geo);
                 $('.aqi-location').html(geo);
 
+                //Get air quality
                 fetch('http://api.openweathermap.org/data/2.5/air_pollution?lat=' + lat + '&lon=' + lon + '&appid=59b311adf4bebd54d25f7c9836d4ed0d')
                     .then(function (data) {
                         return data.json();
@@ -229,6 +404,7 @@ $(document).ready(function () {
 
                         let curFeels = Math.round(data.current.feels_like)
 
+                        //Current weather widget
                         $('.current-time').html('As of ' + GetHourMin(time));
                         $('.current-temp').html(Math.round(data.current.temp) + '°');
                         $('.current-des').html(data.current.weather[0].description.replace(/\b\w/g, l => l.toUpperCase()));
@@ -238,15 +414,14 @@ $(document).ready(function () {
                         $('.current-low').html(Math.round(data.daily[i].temp.min) + '°');
                         $('.current-img').attr('src', 'assets/icons/' + data.current.weather[0].main + '.png');
 
-                        //Today
+                        //Today widget
                         $('.today-morning h2').html(Math.round(data.daily[0].temp.morn) + '°');
                         $('.today-day h2').html(Math.round(data.daily[0].temp.day) + '°');
                         $('.today-evening h2').html(Math.round(data.daily[0].temp.eve) + '°');
                         $('.today-night h2').html(Math.round(data.daily[0].temp.night) + '°');
-                        //$('.bar img').attr('src', 'assets/icons/' + data.current.weather[0].main + '.png');
                         TimeofDay(time);
 
-                        //Today-info
+                        //Today-info widget
                         $('.today-feels').html(Math.round(data.current.feels_like) + '°');
                         $('.sunrise').html(GetHourMin(UnixtoTime(data.current.sunrise, timeZone)));
                         $('.sunset').html(GetHourMin(UnixtoTime(data.current.sunset, timeZone)));
@@ -262,6 +437,7 @@ $(document).ready(function () {
                         $('.today-windgust').html(Math.round(data.current.wind_deg) + '°');
                         //////////////////////////
 
+                        //Get weather for the rest of the current day
                         data.hourly.forEach(e => {
                             if (UnixtoDay(e.dt, timeZone) == UnixtoDay(curTime)) {
                                 let a = GetHour(UnixtoTime(e.dt, timeZone), timeZone)
@@ -300,6 +476,7 @@ $(document).ready(function () {
                             }
                         });
 
+                        //Get past weather from the current day
                         fetch('http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=' + lat + '&lon=' + lon + '&dt=' + dayStart + '&units=imperial&appid=59b311adf4bebd54d25f7c9836d4ed0d')
                             .then(function (data) {
                                 return data.json();
@@ -365,7 +542,7 @@ $(document).ready(function () {
                                     <span class="day">${GetDay(UnixtoDay(data.daily[i].dt, timeZone))}</span>
                                     <div class="temp">
                                         <span class="temp-high">${Math.round(data.daily[i].temp.max)}°</span>
-                                        <span>/</span>
+                                        <span class="spacer">/</span>
                                         <span class="temp-low">${Math.round(data.daily[i].temp.min)}°</span>
                                     </div>
                                     <img class="temp-img" src="assets/icons/${data.daily[i].weather[0].main}.png" alt="">
@@ -416,182 +593,10 @@ $(document).ready(function () {
 
     };
 
-    $('.search-btn').on('click', function () {
-        let val = $('.geo-input').val();
-        Weather(val)
-    });
 
-    function FtoC(f) {
-        return Math.round((parseInt(f) - 32) * (5 / 9));
-    }
-
-    function CtoF(c) {
-        return Math.round((parseInt(c) * (9 / 5)) + 32);
-    }
-
-
-    function PageFtoC() {
-        $('.current-temp').html(FtoC($('.current-temp').html()) + '°');
-        $('.current-high').html(FtoC($('.current-high').html()) + '°');
-        $('.current-low').html(FtoC($('.current-low').html()) + '°');
-
-        $('.today-morning h2').html(FtoC($('.today-morning h2').html()) + '°');
-        $('.today-day h2').html(FtoC($('.today-day h2').html()) + '°');
-        $('.today-evening h2').html(FtoC($('.today-evening h2').html()) + '°');
-        $('.today-night h2').html(FtoC($('.today-night h2').html()) + '°');
-
-        $('.today-feels').html(FtoC($('.today-feels').html()) + '°');
-        $('.today-high').html(FtoC($('.today-high').html()) + '° /');
-        $('.today-low').html(FtoC($('.today-low').html()) + '°');
-
-
-
-        $('.temp-high').each(function () {
-            $(this).html(FtoC($(this).html()) + '°');
-        });
-        $('.temp-low').each(function () {
-            $(this).html(FtoC($(this).html()) + '°');
-        });
-        $('.temp-avg').each(function () {
-            $(this).html(FtoC($(this).html()) + '°');
-        });
-    }
-
-    function PageCtoF() {
-        $('.current-temp').html(CtoF($('.current-temp').html()) + '°');
-        $('.current-high').html(CtoF($('.current-high').html()) + '°');
-        $('.current-low').html(CtoF($('.current-low').html()) + '°');
-
-        $('.today-morning h2').html(CtoF($('.today-morning h2').html()) + '°');
-        $('.today-day h2').html(CtoF($('.today-day h2').html()) + '°');
-        $('.today-evening h2').html(CtoF($('.today-evening h2').html()) + '°');
-        $('.today-night h2').html(CtoF($('.today-night h2').html()) + '°');
-
-        $('.today-feels').html(CtoF($('.today-feels').html()) + '°');
-        $('.today-high').html(CtoF($('.today-high').html()) + '° /');
-        $('.today-low').html(CtoF($('.today-low').html()) + '°');
-
-
-
-        $('.temp-high').each(function () {
-            $(this).html(CtoF($(this).html()) + '°');
-        });
-        $('.temp-low').each(function () {
-            $(this).html(CtoF($(this).html()) + '°');
-        });
-        $('.temp-avg').each(function () {
-            $(this).html(CtoF($(this).html()) + '°');
-        });
-    }
-
-
-
-    function UnixtoDay(u, timeZone) {
-        let unix = u * 1000;
-
-        let day = new Date(unix).toLocaleDateString("en-US", { timeZone: timeZone })
-        // //console.log(day)
-
-        return day;
-    }
-
-    function UnixtoTime(u, timeZone) {
-        let unix = u * 1000;
-
-        let time = new Date(unix).toLocaleTimeString("en-US", { timeZone: timeZone })
-        // //console.log(time)
-
-        return time;
-    }
-
-    function GetHour(t) {
-        let hIndex = t.search(':');
-        let h = t.slice(0, hIndex) + ' ' + t.slice(-2);
-        return h;
-    }
-
-    const revStr = (string) => string.split("").reverse().join('');
-    function GetHourMin(t) {
-        let c = t.slice(-2);
-        let rev = revStr(t)
-        let index = rev.search(':');
-        let a = rev.slice(index + 1, rev.length);
-        rev = revStr(a) + ' ' + c;
-
-        return rev;
-    }
-
-    function TimeofDay(t) {
-        $('.bar h2').css('font-weight', 400);
-        $('.bar p').css('font-weight', 400);
-        let m = t.slice(-2);
-        let hIndex = t.search(':');
-        let h = t.slice(0, hIndex);
-        h = parseInt(h);
-
-        if (m == 'AM') {
-
-            if (h >= 5 && h <= 11) {
-                $('.today-morning h2').css('font-weight', 700);
-                $('.today-morning p').css('font-weight', 700);
-                $('.today-morning h2').css('color', '#4040da');
-            } else if (h == 12 || h >= 1 && h <= 4) {
-                $('.today-night h2').css('font-weight', 700);
-                $('.today-night p').css('font-weight', 700);
-                $('.today-night h2').css('color', '#4040da');
-            }
-
-        } else if (m == 'PM') {
-
-            if (h == 12 || h >= 1 && h <= 5) {
-                $('.today-day h2').css('font-weight', 700);
-                $('.today-day p').css('font-weight', 700);
-                $('.today-day h2').css('color', '#4040da');
-            } else if (h >= 6 && h <= 9) {
-                $('.today-evening h2').css('font-weight', 700);
-                $('.today-evening p').css('font-weight', 700);
-                $('.today-evening h2').css('color', '#4040da');
-            } else if (h == 10 || h == 11) {
-                $('.today-night h2').css('font-weight', 700);
-                $('.today-night p').css('font-weight', 700);
-                $('.today-night h2').css('color', '#4040da');
-            }
-
-        }
-    }
-
-
-    function GetDay(date) {
-        const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        let a = new Date(date);
-        let b = a.getDate()
-        a = a.getDay()
-        b = '' + b;
-        // //console.log(week[a] + ' ' + b)
-        return week[a] + ' ' + b;
-    }
-
-    $('.unit-C').on('click', function () {
-        PageFtoC()
-    });
-    $('.unit-F').on('click', function () {
-        PageCtoF()
-    });
-
-
+    //Initialize
     Weather('New York City');
     News()
-
-
-
-
-    // console.log(UnixtoDay(1612018800, "Europe/London"))
-    // console.log(UnixtoTime(1612018800, "Europe/London"))
-
-
-
-
-
 
 
 

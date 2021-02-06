@@ -218,58 +218,79 @@ $(document).ready(function () {
 
     //Get News
     function News() {
-        fetch('http://api.mediastack.com/v1/news?access_key=d99bf880724e38f4ec8d262cdda7e171&countries=us&date=2021-1-17,' + GetDate())
+        fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=neZ0s639L9MMzPGAgYHdkmpm7hEnVNaK')
             .then(function (data) {
                 return data.json();
             })
             .then(function (data) {
-                // console.log(data)
+                console.log()
+
+                for (let i = 0; i < 4; i++) {
+                    $('.news-' + i + ' h3').html(data.results[i].title);
+                    $('.news-' + i + ' p').html(data.results[i].abstract.substring(0, 150) + '...');
+                    $('.news-' + i + ' img').attr('src', data.results[i].media[0]["media-metadata"][2].url);
+                    $('.news-' + i + ' a').attr('href', data.results[i].url);
+                }
 
 
-                let image = 0;
-                let txt = 0;
-                let i = 0;
-                //Filter and populate news stories without images
-                while (txt < 7) {
-
-                    if (data.data[i].image == null) {
-                        $('.news-main-left ul').append(
-                            `
+                for (let i = 0; i < 6; i++) {
+                    $('.news-main-left ul').append(
+                        `
                         <li>
-                            <a href="${data.data[i].url}">
-                                <h5>${data.data[i].title}</h5>
+                            <a href="${data.results[i].url}">
+                                <h5>${data.results[i].title}</h5>
                             </a>
                         </li>
                         `
-                        );
-                        txt++;
-                    }
-
-                    if (i == 24) {
-                        break;
-                    }
-                    i++;
+                    );
                 }
 
-                //Filter and populate news stories with images
-                i = 0;
-                while (image < 4) {
+                // let image = 0;
+                // let txt = 0;
+                // let i = 0;
+                // //Filter and populate news stories without images
+                // while (txt < 7) {
 
-                    if (data.data[i].image !== null) {
-                        $('.news-' + image + ' h3').html(data.data[i].title);
-                        $('.news-' + image + ' p').html(data.data[i].description.substring(0, 150) + '...');
-                        $('.news-' + image + ' img').attr('src', data.data[i].image);
-                        $('.news-' + image + ' a').attr('href', data.data[i].url);
-                        image++;
-                    }
+                //     if (data.data[i].image == null) {
+                //         $('.news-main-left ul').append(
+                //             `
+                //         <li>
+                //             <a href="${data.data[i].url}">
+                //                 <h5>${data.data[i].title}</h5>
+                //             </a>
+                //         </li>
+                //         `
+                //         );
+                //         txt++;
+                //     }
 
-                    if (i == 24) {
-                        break;
-                    }
-                    i++;
-                }
+                //     if (i == 24) {
+                //         break;
+                //     }
+                //     i++;
+                // }
+
+                // //Filter and populate news stories with images
+                // i = 0;
+                // while (image < 4) {
+
+                //     if (data.data[i].image !== null) {
+                //         $('.news-' + image + ' h3').html(data.data[i].title);
+                //         $('.news-' + image + ' p').html(data.data[i].description.substring(0, 150) + '...');
+                //         $('.news-' + image + ' img').attr('src', data.data[i].image);
+                //         $('.news-' + image + ' a').attr('href', data.data[i].url);
+                //         image++;
+                //     }
+
+                //     if (i == 24) {
+                //         break;
+                //     }
+                //     i++;
+                // }
 
             });
+
+
 
         fetch('https://www.reddit.com/r/USNEWS.json')
             .then(function (response) {
@@ -284,7 +305,7 @@ $(document).ready(function () {
                 //Populate top stories
                 for (let i = 2; a < 4; i++) {
 
-                    if (e[i].data.thumbnail !== 'self') {
+                    if (e[i].data.thumbnail !== 'self' && e[i].data.thumbnail !== 'default') {
                         $('.news-list').append(
                             `
                             <li>
@@ -292,7 +313,7 @@ $(document).ready(function () {
                                 <img src="${e[i].data.thumbnail}">
                                 <p>${e[i].data.title.substring(0, 45) + '...'}</p>
                                 </a>
-                                
+
                             </li>
                             `
                         );
@@ -303,6 +324,8 @@ $(document).ready(function () {
 
 
             });
+
+
     }
 
     //Get Weather
@@ -312,14 +335,14 @@ $(document).ready(function () {
 
         //get cords
         let loc = encodeURI(val)
-        fetch('http://api.positionstack.com/v1/forward?access_key=b3d17c1f4d827be720ddc07891e6bfd5&query=' + loc + '&limit=1')
+        fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + loc + '&limit=5&appid=59b311adf4bebd54d25f7c9836d4ed0d')
             .then(function (data) {
                 return data.json();
             })
             .then(function (data) {
-                let lon = data.data[0].longitude;
-                let lat = data.data[0].latitude;
-                let geo = data.data[0].label.substring(0, data.data[0].label.length - 5);
+                let lon = data[0].lon;
+                let lat = data[0].lat;
+                let geo = data[0].name
 
                 //Display location
                 $('.current-location').html(geo + ' Weather');
@@ -328,7 +351,7 @@ $(document).ready(function () {
                 $('.aqi-location').html(geo);
 
                 //Get air quality
-                fetch('http://api.openweathermap.org/data/2.5/air_pollution?lat=' + lat + '&lon=' + lon + '&appid=59b311adf4bebd54d25f7c9836d4ed0d')
+                fetch('https://api.openweathermap.org/data/2.5/air_pollution?lat=' + lat + '&lon=' + lon + '&appid=59b311adf4bebd54d25f7c9836d4ed0d')
                     .then(function (data) {
                         return data.json();
                     })
@@ -477,7 +500,7 @@ $(document).ready(function () {
                         });
 
                         //Get past weather from the current day
-                        fetch('http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=' + lat + '&lon=' + lon + '&dt=' + dayStart + '&units=imperial&appid=59b311adf4bebd54d25f7c9836d4ed0d')
+                        fetch('https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=' + lat + '&lon=' + lon + '&dt=' + dayStart + '&units=imperial&appid=59b311adf4bebd54d25f7c9836d4ed0d')
                             .then(function (data) {
                                 return data.json();
                             })

@@ -225,15 +225,23 @@ $(document).ready(function () {
             .then(function (data) {
                 console.log()
 
-                for (let i = 0; i < 4; i++) {
-                    $('.news-' + i + ' h3').html(data.results[i].title);
-                    $('.news-' + i + ' p').html(data.results[i].abstract.substring(0, 150) + '...');
-                    $('.news-' + i + ' img').attr('src', data.results[i].media[0]["media-metadata"][2].url);
-                    $('.news-' + i + ' a').attr('href', data.results[i].url);
+                let i = 0;
+                let j = 0;
+                while (j < 4) {
+
+                    if (data.results[i].media[0]) {
+                        $('.news-' + i + ' h3').html(data.results[i].title);
+                        $('.news-' + i + ' p').html(data.results[i].abstract.substring(0, 150) + '...');
+                        $('.news-' + i + ' img').attr('src', data.results[i].media[0]["media-metadata"][2].url);
+                        $('.news-' + i + ' a').attr('href', data.results[i].url);
+                        j++;
+                    }
+
+                    i++;
                 }
 
 
-                for (let i = 0; i < 6; i++) {
+                for (let i = 6; i < 12; i++) {
                     $('.news-main-left ul').append(
                         `
                         <li>

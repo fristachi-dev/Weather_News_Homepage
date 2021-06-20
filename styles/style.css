@@ -14,23 +14,29 @@
           user-select: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 1em;
   font-weight: normal;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#867ebb), color-stop(#BF91C3), to(#ddc8db));
-  background: linear-gradient(#867ebb, #BF91C3, #ddc8db);
+  background: -webkit-gradient(linear, left top, left bottom, from(#867ebb), color-stop(#bf91c3), to(#ddc8db));
+  background: linear-gradient(#867ebb, #bf91c3, #ddc8db);
   color: #111;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-p, span {
+p,
+span {
   font-size: 18px;
   font-weight: 300;
 }
@@ -56,7 +62,7 @@ h3 {
 }
 
 .opac {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .float-left {
@@ -108,7 +114,7 @@ nav {
 nav .nav-upper {
   height: 80px;
   position: relative;
-  background: #1A357C;
+  background: #1a357c;
 }
 
 nav .nav-upper .wrapper {
@@ -162,7 +168,7 @@ nav .nav-upper .wrapper .center input {
   width: 240px;
   border: none;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: white;
   font-size: 16px;
@@ -242,7 +248,8 @@ nav .nav-upper .wrapper .right-nav .units span {
   float: left;
 }
 
-nav .nav-upper .wrapper .right-nav .units .unit-F, nav .nav-upper .wrapper .right-nav .units .unit-C {
+nav .nav-upper .wrapper .right-nav .units .unit-F,
+nav .nav-upper .wrapper .right-nav .units .unit-C {
   cursor: pointer;
   width: 24px;
 }
@@ -997,9 +1004,6 @@ section .right > div {
 }
 
 @media only screen and (max-width: 1130px) {
-  body {
-    background: #700202;
-  }
   .width {
     width: 95%;
   }
@@ -1021,9 +1025,6 @@ section .right > div {
 }
 
 @media only screen and (max-width: 850px) {
-  body {
-    background: green;
-  }
   nav .wrapper {
     margin: 0 !important;
     width: 100% !important;
@@ -1053,8 +1054,8 @@ section .right > div {
 
 @media only screen and (max-width: 600px) {
   body {
-    background: -webkit-gradient(linear, left top, left bottom, from(#867ebb), color-stop(#BF91C3), to(#ddc8db));
-    background: linear-gradient(#867ebb, #BF91C3, #ddc8db);
+    background: -webkit-gradient(linear, left top, left bottom, from(#867ebb), color-stop(#bf91c3), to(#ddc8db));
+    background: linear-gradient(#867ebb, #bf91c3, #ddc8db);
   }
   .width {
     width: 100%;
@@ -1084,7 +1085,8 @@ section .right > div {
     width: 100%;
     padding: 0 !important;
   }
-  nav .logo, nav .globe {
+  nav .logo,
+  nav .globe {
     display: none;
   }
   nav .left-nav .logo-small {

@@ -1,0 +1,1103 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2021 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/b7e23ef9-9053-5eb9-9d1d-5d0d2e5f5024",
+      "url": "https://www.nytimes.com/2021/06/27/us/miami-building-investigation-clues.html",
+      "id": 100000007836895,
+      "asset_id": 100000007836895,
+      "source": "New York Times",
+      "published_date": "2021-06-27",
+      "updated": "2021-06-28 16:13:22",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Surfside, Fla, Building Collapse (2021);Buildings (Structures);Engineering and Engineers;Building (Construction);Concrete;National Institute of Standards and Technology;Florida;Surfside (Fla)",
+      "column": null,
+      "byline": "By James Glanz, Anjali Singhvi and Mike Baker",
+      "type": "Article",
+      "title": "Possible Failure Point Emerges in Miami-Area Building Collapse",
+      "abstract": "Some engineers looking at the failure of a 13-story condo tower in Florida said the collapse appeared to have begun somewhere near the bottom of the building.",
+      "des_facet": [
+        "Surfside, Fla, Building Collapse (2021)",
+        "Buildings (Structures)",
+        "Engineering and Engineers",
+        "Building (Construction)",
+        "Concrete"
+      ],
+      "org_facet": ["National Institute of Standards and Technology"],
+      "per_facet": [],
+      "geo_facet": ["Florida", "Surfside (Fla)"],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/c0b61f00-cf65-5536-98d3-79fb9db7949f",
+      "url": "https://www.nytimes.com/2021/06/26/us/miami-building-collapse-investigation.html",
+      "id": 100000007836634,
+      "asset_id": 100000007836634,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-27 11:08:03",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Surfside, Fla, Building Collapse (2021);Buildings (Structures);Building (Construction);Engineering and Engineers;Accidents and Safety;Concrete;Condominiums;Morabito, Frank P;Morabito Consultants;Surfside (Fla)",
+      "column": null,
+      "byline": "By Mike Baker, Anjali Singhvi and Patricia Mazzei",
+      "type": "Article",
+      "title": "Engineer Warned of ‘Major Structural Damage’ at Florida Condo Complex",
+      "abstract": "A consultant in 2018 urged the managers to repair cracked columns and crumbling concrete. The work was finally about to get underway when the building collapsed.",
+      "des_facet": [
+        "Surfside, Fla, Building Collapse (2021)",
+        "Buildings (Structures)",
+        "Building (Construction)",
+        "Engineering and Engineers",
+        "Accidents and Safety",
+        "Concrete",
+        "Condominiums"
+      ],
+      "org_facet": ["Morabito Consultants"],
+      "per_facet": ["Morabito, Frank P"],
+      "geo_facet": ["Surfside (Fla)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Images from a 2018 report by structural engineer Frank Morabito on the Champlain Towers South condomium.",
+          "copyright": "Morabito Consultants, via Town of Surfside",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/world/26miami-mystery-promo/26miami-mystery-promo-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/world/26miami-mystery-promo/26miami-mystery-promo-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/world/26miami-mystery-promo/26miami-mystery-promo-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d8147ba7-150a-5116-8cb1-e7a9b275c481",
+      "url": "https://www.nytimes.com/2021/06/27/nyregion/new-jersey-valedictorian-lgbtq-speech.html",
+      "id": 100000007836858,
+      "asset_id": 100000007836858,
+      "source": "New York Times",
+      "published_date": "2021-06-27",
+      "updated": "2021-06-28 13:16:27",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Education (K-12);Principals (School);Discrimination;Homosexuality and Bisexuality;Mental Health and Disorders;Censorship;Commencement Speeches;Dershem, Bryce;Tull, Robert M;Eastern Regional High School (Voorhees Township, NJ);Voorhees Township (NJ)",
+      "column": null,
+      "byline": "By Alyssa Lukpat",
+      "type": "Article",
+      "title": "When a Valedictorian Spoke of His Queer Identity, the Principal Cut Off His Speech",
+      "abstract": "The principal also took away the valedictorian’s prepared remarks, so the student recited the speech from memory.",
+      "des_facet": [
+        "Education (K-12)",
+        "Principals (School)",
+        "Discrimination",
+        "Homosexuality and Bisexuality",
+        "Mental Health and Disorders",
+        "Censorship",
+        "Commencement Speeches"
+      ],
+      "org_facet": ["Eastern Regional High School (Voorhees Township, NJ)"],
+      "per_facet": ["Dershem, Bryce", "Tull, Robert M"],
+      "geo_facet": ["Voorhees Township (NJ)"],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/7907a119-c5ad-55d7-8790-a0d7201be462",
+      "url": "https://www.nytimes.com/2021/06/26/health/covid-vaccine-teens-consent.html",
+      "id": 100000007821477,
+      "asset_id": 100000007821477,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-27 20:48:30",
+      "section": "Health",
+      "subsection": "",
+      "nytdsection": "health",
+      "adx_keywords": "your-feed-science;Children and Childhood;Teenagers and Adolescence;Coronavirus (2019-nCoV);Vaccination and Immunization;Parenting;your-feed-healthcare;States (US);United States",
+      "column": null,
+      "byline": "By Jan Hoffman",
+      "type": "Article",
+      "title": "As Parents Forbid Covid Shots, Defiant Teenagers Seek Ways to Get Them",
+      "abstract": "Most medical consent laws require parental permission for minors to get a vaccine. Now some places are easing restrictions for Covid shots while others are proposing new ones.",
+      "des_facet": [
+        "your-feed-science",
+        "Children and Childhood",
+        "Teenagers and Adolescence",
+        "Coronavirus (2019-nCoV)",
+        "Vaccination and Immunization",
+        "Parenting",
+        "your-feed-healthcare",
+        "States (US)"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["United States"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "When the mother of this Florida teenager blocked her from getting the Covid vaccine, the 15-year-old was uninvited to a friend’s party and continues to feel excluded from many social events because she remains unvaccinated.",
+          "copyright": "Maria Alejandra Cardona for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/science/00virus-vax-teens1/00virus-vax-teens1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/science/00virus-vax-teens1/merlin_189648114_56e624d1-de8b-4479-b955-68eddfcd7a06-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/science/00virus-vax-teens1/merlin_189648114_56e624d1-de8b-4479-b955-68eddfcd7a06-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/2eca6111-1984-5b59-b592-fdf8dec423de",
+      "url": "https://www.nytimes.com/2021/06/25/opinion/coronavirus-lab.html",
+      "id": 100000007826488,
+      "asset_id": 100000007826488,
+      "source": "New York Times",
+      "published_date": "2021-06-25",
+      "updated": "2021-06-26 22:09:47",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Coronavirus (2019-nCoV);Laboratories and Scientific Equipment;SARS (Severe Acute Respiratory Syndrome);Genetic Engineering;Research;Bats;Wildlife Trade and Poaching;Coronavirus Risks and Safety Concerns;Shi Zhengli;Daszak, Peter;Wuhan Institute of Virology (China);China;Wuhan (China)",
+      "column": null,
+      "byline": "By Zeynep Tufekci",
+      "type": "Article",
+      "title": "Where Did the Coronavirus Come From? What We Already Know Is Troubling.",
+      "abstract": "Even if the coronavirus did not emerge from a lab, the groundwork for a potential disaster had been laid for years, and learning its lessons is essential to preventing others.",
+      "des_facet": [
+        "Coronavirus (2019-nCoV)",
+        "Laboratories and Scientific Equipment",
+        "SARS (Severe Acute Respiratory Syndrome)",
+        "Genetic Engineering",
+        "Research",
+        "Bats",
+        "Wildlife Trade and Poaching",
+        "Coronavirus Risks and Safety Concerns"
+      ],
+      "org_facet": ["Wuhan Institute of Virology (China)"],
+      "per_facet": ["Shi Zhengli", "Daszak, Peter"],
+      "geo_facet": ["China", "Wuhan (China)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Antoine d' Agata/Magnum Photos",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/opinion/25tufeckiSub/25tufeckiSub-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/opinion/25tufeckiSub/25tufeckiSub-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/opinion/25tufeckiSub/25tufeckiSub-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/98f08774-764c-5700-9c4f-f5b96bd8e59b",
+      "url": "https://www.nytimes.com/2021/06/26/us/politics/biden-infrastructure.html",
+      "id": 100000007837088,
+      "asset_id": 100000007837088,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-26 23:49:14",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "American Jobs Plan (2021);United States Politics and Government;Infrastructure (Public Works);Biden, Joseph R Jr;Democratic Party;Republican Party;House of Representatives;Senate",
+      "column": null,
+      "byline": "By Emily Cochrane, Jim Tankersley and Michael D. Shear",
+      "type": "Article",
+      "title": "‘Not My Intent’: How Biden’s Impromptu Comments Upended a Political Win",
+      "abstract": "President Biden walked back his stray remarks in a bid to salvage an infrastructure agreement that could cement his legacy as a bipartisan deal maker.",
+      "des_facet": [
+        "American Jobs Plan (2021)",
+        "United States Politics and Government",
+        "Infrastructure (Public Works)"
+      ],
+      "org_facet": [
+        "Democratic Party",
+        "Republican Party",
+        "House of Representatives",
+        "Senate"
+      ],
+      "per_facet": ["Biden, Joseph R Jr"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The stray comments President Biden made during a news conference on Thursday suggested to centrist senators and Republicans that he would go so far as to veto their bipartisan plan if a larger bill did not materialize.",
+          "copyright": "Pete Marovich for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/politics/26dc-biden-infrastructure1/26dc-biden-ticktock1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/politics/26dc-biden-infrastructure1/merlin_189837054_c85cedd8-84bf-4571-a0ec-0a07f95a2a74-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/politics/26dc-biden-infrastructure1/merlin_189837054_c85cedd8-84bf-4571-a0ec-0a07f95a2a74-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/49bb1818-2931-514b-be81-29d592e2792d",
+      "url": "https://www.nytimes.com/2021/06/28/health/coronavirus-vaccines-immunity.html",
+      "id": 100000007836931,
+      "asset_id": 100000007836931,
+      "source": "New York Times",
+      "published_date": "2021-06-28",
+      "updated": "2021-06-28 09:00:45",
+      "section": "Health",
+      "subsection": "",
+      "nytdsection": "health",
+      "adx_keywords": "your-feed-science;Vaccination and Immunization;Coronavirus (2019-nCoV);Immune System;Lymph Nodes and Lymphatic System;Antibodies;Moderna Inc;Nature (Journal);Pfizer Inc;BioNTech SE",
+      "column": null,
+      "byline": "By Apoorva Mandavilli",
+      "type": "Article",
+      "title": "Pfizer and Moderna Vaccines Likely to Produce Lasting Immunity, Study Finds",
+      "abstract": "Immune cells are still organizing to fight the coronavirus months after inoculation, scientists reported.",
+      "des_facet": [
+        "your-feed-science",
+        "Vaccination and Immunization",
+        "Coronavirus (2019-nCoV)",
+        "Immune System",
+        "Lymph Nodes and Lymphatic System",
+        "Antibodies"
+      ],
+      "org_facet": [
+        "Moderna Inc",
+        "Nature (Journal)",
+        "Pfizer Inc",
+        "BioNTech SE"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A health care worker prepares to administer the Pfizer-BioNTech vaccine last month in Miami.",
+          "copyright": "Saul Martinez for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/28/multimedia/28virus-immunity-02/28virus-immunity-02-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/28/multimedia/28virus-immunity-02/28virus-immunity-02-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/28/multimedia/28virus-immunity-02/28virus-immunity-02-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/8d72fb3f-0315-5f54-8706-13858d3d928a",
+      "url": "https://www.nytimes.com/2021/06/26/us/politics/trump-rally-ohio.html",
+      "id": 100000007836925,
+      "asset_id": 100000007836925,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-26 23:53:32",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Elections, House of Representatives;Midterm Elections (2022);Trump, Donald J;Republican Party;Ohio",
+      "column": null,
+      "byline": "By Jeremy W. Peters",
+      "type": "Article",
+      "title": "Trump, Seeking to Maintain G.O.P. Sway, Holds First Rally Since Jan. 6",
+      "abstract": "The former president’s speech in Ohio, made on behalf of a challenger to a Republican congressman who voted to impeach Mr. Trump, reflected both his power over the party and his diminished status.",
+      "des_facet": [
+        "Elections, House of Representatives",
+        "Midterm Elections (2022)"
+      ],
+      "org_facet": ["Republican Party"],
+      "per_facet": ["Trump, Donald J"],
+      "geo_facet": ["Ohio"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Former President Donald J. Trump throwing hats to supporters on Saturday evening at the Lorain County Fairgrounds in Wellington, Ohio.",
+          "copyright": "Maddie McGarvey for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/multimedia/26Trump-rally-01/26Trump-rally-01-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/multimedia/26Trump-rally-01/26Trump-rally-01-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/multimedia/26Trump-rally-01/26Trump-rally-01-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/c737629e-3578-54fe-b578-2300cdcd5f07",
+      "url": "https://www.nytimes.com/2021/06/24/dining/drinks/easy-cocktail-recipes.html",
+      "id": 100000007821952,
+      "asset_id": 100000007821952,
+      "source": "New York Times",
+      "published_date": "2021-06-24",
+      "updated": "2021-06-24 14:03:34",
+      "section": "Food",
+      "subsection": "Wine, Beer & Cocktails",
+      "nytdsection": "food",
+      "adx_keywords": "Cocktails and Mixed Drinks;Alcoholic Beverages;Content Type: Service",
+      "column": null,
+      "byline": "By Rebekah Peppler",
+      "type": "Article",
+      "title": "The Best Cocktail Is the One You Know by Heart",
+      "abstract": "Committing just a few key ratios to memory can make at-home mixology a breeze.",
+      "des_facet": [
+        "Cocktails and Mixed Drinks",
+        "Alcoholic Beverages",
+        "Content Type: Service"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cocktails like the Negroni, which features equal parts Campari, gin and sweet vermouth, are easy to adapt and make on the fly.",
+          "copyright": "Linda Xiao for The New York Times. Food Stylist: Judy Kim.",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/30/dining/25cocktails1/merlin_189797574_b1dc077d-1c4f-42a0-92cd-b40234dc4c1b-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/30/dining/25cocktails1/merlin_189797574_b1dc077d-1c4f-42a0-92cd-b40234dc4c1b-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/30/dining/25cocktails1/merlin_189797574_b1dc077d-1c4f-42a0-92cd-b40234dc4c1b-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/9057711c-c57c-5a67-a158-ef4cc16b4b6b",
+      "url": "https://www.nytimes.com/2021/06/24/nyregion/orthodox-jewish-mother-medical-school.html",
+      "id": 100000007806257,
+      "asset_id": 100000007806257,
+      "source": "New York Times",
+      "published_date": "2021-06-24",
+      "updated": "2021-06-26 22:09:25",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Jews and Judaism;Orthodox Judaism;Hasidism;Women and Girls;Medical Schools;Colleges and Universities;Content Type: Personal Profile;Doctors;Touro College;Monsey (NY)",
+      "column": null,
+      "byline": "By Corey Kilgannon",
+      "type": "Article",
+      "title": "‘The Rabbi Said It Was OK’: Hasidic Mother of 10 Becomes Doctor",
+      "abstract": "An ultra-Orthodox mother navigated strict cultural norms to become one of the few Hasidic female doctors in the country.",
+      "des_facet": [
+        "Jews and Judaism",
+        "Orthodox Judaism",
+        "Hasidism",
+        "Women and Girls",
+        "Medical Schools",
+        "Colleges and Universities",
+        "Content Type: Personal Profile",
+        "Doctors"
+      ],
+      "org_facet": ["Touro College"],
+      "per_facet": [],
+      "geo_facet": ["Monsey (NY)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Alexandra Friedman, who graduated from medical school last month, with nine of her 10 children. She did not want their faces shown online for privacy reasons.",
+          "copyright": "Sara Naomi Lewkowicz for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/27/nyregion/27ny-hasidicdoctor/00ny-hasidicdoctor-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/27/nyregion/27ny-hasidicdoctor/00ny-hasidicdoctor-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/27/nyregion/27ny-hasidicdoctor/00ny-hasidicdoctor-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d1046baa-9882-55a3-96d7-f83fb82da95f",
+      "url": "https://www.nytimes.com/2021/06/26/us/politics/recurring-donations-seniors.html",
+      "id": 100000007802368,
+      "asset_id": 100000007802368,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-27 08:58:32",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Campaign Finance;Philanthropy;Elderly;Frauds and Swindling;Presidential Election of 2020;Rebates and Refunds;Computers and the Internet;Democratic Party;Republican Party;ActBlue;WinRed;Democratic Congressional Campaign Committee;Republican National Committee",
+      "column": null,
+      "byline": "By Shane Goldmacher",
+      "type": "Article",
+      "title": "How Deceptive Campaign Fund-Raising Ensnares Older People",
+      "abstract": "Older Americans, a critical source of political donations, often fall victim to aggressive and misleading digital practices. A broad Times analysis points to the scope of the problem.",
+      "des_facet": [
+        "Campaign Finance",
+        "Philanthropy",
+        "Elderly",
+        "Frauds and Swindling",
+        "Presidential Election of 2020",
+        "Rebates and Refunds",
+        "Computers and the Internet"
+      ],
+      "org_facet": [
+        "Democratic Party",
+        "Republican Party",
+        "ActBlue",
+        "WinRed",
+        "Democratic Congressional Campaign Committee",
+        "Republican National Committee"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "William W. Vaughan Jr.’s credit card statement is dominated by recurring donations to a variety of Republican candidates, processed through WinRed. Mr. Vaughan’s personal information has been redacted.",
+          "copyright": "",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/politics/26donations-seniors-statement/26donations-seniors-statement-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/politics/26donations-seniors-statement/26donations-seniors-statement-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/politics/26donations-seniors-statement/26donations-seniors-statement-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/95034d08-817e-58af-a445-dc781a5a8431",
+      "url": "https://www.nytimes.com/2021/06/24/us/police-resignations-protests-asheville.html",
+      "id": 100000007828336,
+      "asset_id": 100000007828336,
+      "source": "New York Times",
+      "published_date": "2021-06-24",
+      "updated": "2021-06-25 00:18:36",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Police Reform;George Floyd Protests (2020);Police;Demonstrations, Protests and Riots;Asheville (NC);North Carolina",
+      "column": null,
+      "byline": "By Neil MacFarquhar",
+      "type": "Article",
+      "title": "Why Police Have Been Quitting in Droves in the Last Year",
+      "abstract": "Asheville, N.C., has been among the hardest hit by police departures in the wake of last year’s George Floyd protests. About a third of the force quit or retired.",
+      "des_facet": [
+        "Police Reform",
+        "George Floyd Protests (2020)",
+        "Police",
+        "Demonstrations, Protests and Riots"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["Asheville (NC)", "North Carolina"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The department has lost more than a third of its officers. “A lot of our experience is walking out the door,” Chief David Zack said.",
+          "copyright": "Clark Hodgin for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/23/us/23ashevillepd-8/23ashevillepd-8-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/23/us/23ashevillepd-8/23ashevillepd-8-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/23/us/23ashevillepd-8/23ashevillepd-8-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/4881c1b9-8bc2-535c-ba1c-ae78e21f2e0e",
+      "url": "https://www.nytimes.com/2021/06/26/opinion/britney-spears-amber-tamblyn.html",
+      "id": 100000007835299,
+      "asset_id": 100000007835299,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-27 12:50:01",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Women and Girls;Finances;Wills and Estates;Actors and Actresses;Parenting;Tamblyn, Amber;Spears, Britney",
+      "column": null,
+      "byline": "By Amber Tamblyn",
+      "type": "Article",
+      "title": "Amber Tamblyn: Britney Spears’s Raw Anger, and Mine",
+      "abstract": "What I know about the toxic combination of money and fame for young women.",
+      "des_facet": [
+        "Women and Girls",
+        "Finances",
+        "Wills and Estates",
+        "Actors and Actresses",
+        "Parenting"
+      ],
+      "org_facet": [],
+      "per_facet": ["Tamblyn, Amber", "Spears, Britney"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Matt Winkelmeyer/Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/opinion/25Tamblyn2/25Tamblyn2-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/opinion/25Tamblyn2/25Tamblyn2-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/opinion/25Tamblyn2/25Tamblyn2-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/52ca595c-423b-57eb-a084-99a15920df59",
+      "url": "https://www.nytimes.com/2021/06/24/style/how-can-i-tell-my-mother-in-law-to-buzz-off.html",
+      "id": 100000007826442,
+      "asset_id": 100000007826442,
+      "source": "New York Times",
+      "published_date": "2021-06-24",
+      "updated": "2021-06-25 17:35:39",
+      "section": "Style",
+      "subsection": "",
+      "nytdsection": "style",
+      "adx_keywords": "Customs, Etiquette and Manners;Content Type: Service",
+      "column": null,
+      "byline": "By Philip Galanes",
+      "type": "Article",
+      "title": "How Can I Tell My Mother-in-Law to Buzz Off?",
+      "abstract": "Nothing like a non-blood relative who won’t stay away.",
+      "des_facet": ["Customs, Etiquette and Manners", "Content Type: Service"],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Miguel Porlan",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/20/fashion/socialqs-2021-artwork/socialqs-2021-artwork-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/20/fashion/socialqs-2021-artwork/socialqs-2021-artwork-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/20/fashion/socialqs-2021-artwork/socialqs-2021-artwork-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d9a6ad76-1b20-523f-8386-1f8bb7ac8467",
+      "url": "https://www.nytimes.com/2021/06/27/us/politics/us-airstrikes-iraq-syria.html",
+      "id": 100000007837886,
+      "asset_id": 100000007837886,
+      "source": "New York Times",
+      "published_date": "2021-06-27",
+      "updated": "2021-06-28 10:15:31",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "United States Defense and Military Forces;Defense and Military Forces;Drones (Pilotless Planes);Kirby, John F;Defense Department;Kataib Hezbollah;Iraq;Syria",
+      "column": null,
+      "byline": "By Eric Schmitt",
+      "type": "Article",
+      "title": "U.S. Carries Out Airstrikes in Iraq and Syria",
+      "abstract": "The attacks were against weapons storage facilities used by Iranian-backed militias that the Pentagon said had conducted drone strikes against places in Iraq where American troops, spies and diplomats were located.",
+      "des_facet": [
+        "United States Defense and Military Forces",
+        "Defense and Military Forces",
+        "Drones (Pilotless Planes)"
+      ],
+      "org_facet": ["Defense Department", "Kataib Hezbollah"],
+      "per_facet": ["Kirby, John F"],
+      "geo_facet": ["Iraq", "Syria"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A member of the Iraqi security forces guarding an area near Baghdad International Airport this month after an attack by a drone.",
+          "copyright": "Sabah Arar/Agence France-Presse &mdash; Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/28/lens/27dc-strikes-print/27dc-strikes-photo-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/28/lens/27dc-strikes-print/27dc-strikes-photo-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/28/lens/27dc-strikes-print/27dc-strikes-photo-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/b90d92df-8455-52bb-bca6-7aab92546ab4",
+      "url": "https://www.nytimes.com/2021/06/26/opinion/trump-republican-party.html",
+      "id": 100000007833173,
+      "asset_id": 100000007833173,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-28 10:00:04",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "United States Politics and Government;Discrimination;Race and Ethnicity;Black People;Whites;Conservatism (US Politics);Voter Registration and Requirements;Trump, Donald J;Republican Party;United States",
+      "column": null,
+      "byline": "By Adam Serwer",
+      "type": "Article",
+      "title": "The Cruel Logic of the Republican Party, Before and After Trump",
+      "abstract": "Why there was Trumpism long before Trump — and there will be long afterward. ",
+      "des_facet": [
+        "United States Politics and Government",
+        "Discrimination",
+        "Race and Ethnicity",
+        "Black People",
+        "Whites",
+        "Conservatism (US Politics)",
+        "Voter Registration and Requirements"
+      ],
+      "org_facet": ["Republican Party"],
+      "per_facet": ["Trump, Donald J"],
+      "geo_facet": ["United States"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Illustration by Arsh Raziuddin, The New York Times; Photography, via Getty",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/opinion/sunday/26serwer_web/26serwer_web-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/opinion/sunday/26serwer_web/26serwer_web-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/opinion/sunday/26serwer_web/26serwer_web-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/f6830a74-5445-5883-8879-e291d4da6bb6",
+      "url": "https://www.nytimes.com/2021/06/26/us/miami-building-collapse-neighbor-evacuations.html",
+      "id": 100000007836637,
+      "asset_id": 100000007836637,
+      "source": "New York Times",
+      "published_date": "2021-06-26",
+      "updated": "2021-06-27 12:11:26",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Surfside, Fla, Building Collapse (2021);Buildings (Structures);Accidents and Safety;Condominiums;Surfside (Fla)",
+      "column": null,
+      "byline": "By Kimiko de Freytas-Tamura, Patricia Mazzei and Joseph B. Treaster",
+      "type": "Article",
+      "title": "Anxious Residents of Sister Tower to Fallen Florida Condo Wonder: Stay or Go?",
+      "abstract": "The partly collapsed Champlain Towers South scared people who live in Champlain Towers North. But no one has ordered them to evacuate — yet.",
+      "des_facet": [
+        "Surfside, Fla, Building Collapse (2021)",
+        "Buildings (Structures)",
+        "Accidents and Safety",
+        "Condominiums"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["Surfside (Fla)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Champlain Towers North, center, among other high rise condominiums in Surfside, Fla. The mayor of Surfside said there are roughly 20 buildings with 12 stories that overlook the ocean in his town.",
+          "copyright": "Scott McIntyre for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/26miami-buildings1/26miami-buildings1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/26miami-buildings1/merlin_189934884_3204db53-9733-41de-820c-88f7e3e6cb38-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/26/us/26miami-buildings1/merlin_189934884_3204db53-9733-41de-820c-88f7e3e6cb38-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/56530668-e4d8-5cae-959b-5abc781b3e85",
+      "url": "https://www.nytimes.com/2021/06/25/science/dragon-man-skull-china.html",
+      "id": 100000007829525,
+      "asset_id": 100000007829525,
+      "source": "New York Times",
+      "published_date": "2021-06-25",
+      "updated": "2021-06-28 02:15:14",
+      "section": "Science",
+      "subsection": "",
+      "nytdsection": "science",
+      "adx_keywords": "Archaeology and Anthropology;Paleontology;Fossils;Skull (Body Part);Evolution (Biology);Denisova Hominid;Neanderthal Man;Research;China;Harbin (China)",
+      "column": null,
+      "byline": "By Carl Zimmer",
+      "type": "Article",
+      "title": "Discovery of ‘Dragon Man’ Skull in China May Add Species to Human Family Tree",
+      "abstract": "A laborer discovered the fossil and hid it in a well for 85 years. Scientists say it could help sort out the human family tree and how our species emerged.",
+      "des_facet": [
+        "Archaeology and Anthropology",
+        "Paleontology",
+        "Fossils",
+        "Skull (Body Part)",
+        "Evolution (Biology)",
+        "Denisova Hominid",
+        "Neanderthal Man",
+        "Research"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["China", "Harbin (China)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A virtual reconstruction of the Harbin cranium",
+          "copyright": "Xijun Ni",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/science/25dragonman-promo/25dragonman-promo-thumbStandard.png",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/science/25dragonman-promo/25dragonman-promo-mediumThreeByTwo210.png",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/25/science/25dragonman-promo/25dragonman-promo-mediumThreeByTwo440.png",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/0904cb05-3628-5c0e-84a3-6653f2f0f3cb",
+      "url": "https://www.nytimes.com/2021/06/24/us/miami-surfside-building-collapse.html",
+      "id": 100000007832393,
+      "asset_id": 100000007832393,
+      "source": "New York Times",
+      "published_date": "2021-06-24",
+      "updated": "2021-06-28 10:16:03",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Buildings (Structures);Accidents and Safety;Rescues;Surfside, Fla, Building Collapse (2021);Miami (Fla);Surfside (Fla)",
+      "column": null,
+      "byline": "By The New York Times",
+      "type": "Article",
+      "title": "What to Know About the Building Collapse in Surfside, Fla.",
+      "abstract": "More than 150 people were unaccounted for, the authorities said.",
+      "des_facet": [
+        "Buildings (Structures)",
+        "Accidents and Safety",
+        "Rescues",
+        "Surfside, Fla, Building Collapse (2021)"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["Miami (Fla)", "Surfside (Fla)"],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/e4230042-95de-5e8c-94ac-77ca3af707f2",
+      "url": "https://www.nytimes.com/2021/06/25/world/europe/greece-migrants.html",
+      "id": 100000007828094,
+      "asset_id": 100000007828094,
+      "source": "New York Times",
+      "published_date": "2021-06-25",
+      "updated": "2021-06-27 10:47:27",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Middle East and Africa Migrant Crisis;Smuggling;Illegal Immigration;Refugees and Displaced Persons;International Relations;European Union;Greece;Chios (Greece);Turkey",
+      "column": null,
+      "byline": "By Niki Kitsantonis",
+      "type": "Article",
+      "title": "He Saved 31 People at Sea. Then Got a 142-Year Prison Sentence.",
+      "abstract": "Greece is prosecuting migrants on charges of people smuggling, and imposing heavy jail terms. Rights groups say many migrants are being unfairly accused and sentenced.",
+      "des_facet": [
+        "Middle East and Africa Migrant Crisis",
+        "Smuggling",
+        "Illegal Immigration",
+        "Refugees and Displaced Persons",
+        "International Relations"
+      ],
+      "org_facet": ["European Union"],
+      "per_facet": [],
+      "geo_facet": ["Greece", "Chios (Greece)", "Turkey"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Migrants landing on the shore of the Greek island of Lesbos last year.",
+          "copyright": "Aris Messinis/Agence France-Presse — Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/22/world/00greece-migrants01/00greece-migrants01-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/22/world/00greece-migrants01/merlin_169752228_c46c9488-187f-4cdb-a8da-9308db72a195-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/22/world/00greece-migrants01/merlin_169752228_c46c9488-187f-4cdb-a8da-9308db72a195-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}

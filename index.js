@@ -211,7 +211,7 @@ $(document).ready(function () {
     return temp;
   }
 
-  //Get News
+  // Get News
   function News() {
     fetch(
       "https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=neZ0s639L9MMzPGAgYHdkmpm7hEnVNaK"
@@ -224,6 +224,7 @@ $(document).ready(function () {
 
         let i = 0;
         let j = 0;
+        //top stories
         while (j < 4) {
           if (data.results[i].media[0]) {
             $(".news-" + i + " h3").html(data.results[i].title);
@@ -241,7 +242,8 @@ $(document).ready(function () {
           i++;
         }
 
-        for (let i = 6; i < 12; i++) {
+        //news article list
+        for (let i = 12; i < 18; i++) {
           $(".news-main-left ul").append(
             `
                         <li>
@@ -297,6 +299,7 @@ $(document).ready(function () {
         // }
       });
 
+    //tops news
     fetch("https://www.reddit.com/r/USNEWS.json")
       .then(function (response) {
         return response.json();
@@ -330,6 +333,7 @@ $(document).ready(function () {
         }
       });
   }
+  
 
   //Get Weather
   function Weather(val) {
@@ -354,6 +358,7 @@ $(document).ready(function () {
         $(".current-location").html(geo + " Weather");
         $(".list-location").html(" - " + geo);
         $(".today h3").html("Today's Forecast for " + geo);
+        $(".pad-wrap h3").html("Weather Today in " + geo);
         $(".aqi-location").html(geo);
 
         //Get air quality

@@ -227,15 +227,15 @@ $(document).ready(function () {
         //top stories
         while (j < 4) {
           if (data.results[i].media[0]) {
-            $(".news-" + i + " h3").html(data.results[i].title);
-            $(".news-" + i + " p").html(
+            $(".news-" + j + " h3").html(data.results[i].title);
+            $(".news-" + j + " p").html(
               data.results[i].abstract.substring(0, 150) + "..."
             );
-            $(".news-" + i + " img").attr(
+            $(".news-" + j + " img").attr(
               "src",
               data.results[i].media[0]["media-metadata"][2].url
             );
-            $(".news-" + i + " a").attr("href", data.results[i].url);
+            $(".news-" + j + " a").attr("href", data.results[i].url);
             j++;
           }
 

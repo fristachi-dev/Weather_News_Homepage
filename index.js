@@ -350,15 +350,29 @@ $(document).ready(function () {
         return data.json();
       })
       .then(function (data) {
-        let lon = data[0].lon;
-        let lat = data[0].lat;
-        let geo = data[0].name;
+
+        //Filters most popular city
+        let temp = Object.keys(data[0].local_names).length
+        let pop = 0
+        for (let i = 0; i < data.length - 1; i++) {
+          if (temp < Object.keys(data[i + 1].local_names).length ) {
+            temp = Object.keys(data[i + 1].local_names).length
+            pop = i + 1;
+          } 
+        }
+
+
+        let lon = data[pop].lon;
+        let lat = data[pop].lat;
+        let geo = data[pop].name;
+        let country = data[pop].country;
+
 
         //Display location
-        $(".current-location").html(geo + " Weather");
+        $(".current-location").html(`${geo}, ${country} Weather`);
         $(".list-location").html(" - " + geo);
-        $(".today h3").html("Today's Forecast for " + geo);
-        $(".pad-wrap h3").html("Weather Today in " + geo);
+        $(".today .header-1").html(`Today's Forecast for ${geo}`);
+        $(".pad-wrap .header-2").html(`Weather Today in ${geo}`);
         $(".aqi-location").html(geo);
 
         //Get air quality

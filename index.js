@@ -3,6 +3,7 @@ $(document).ready(function () {
   $(".content").hide();
   $(".wrapper-today").show();
   $(".unit-F").toggleClass("active-unit");
+  $(".today-nav").addClass("active");
 
   //Nav change tabs
   $(".today-nav").on("click", function () {
